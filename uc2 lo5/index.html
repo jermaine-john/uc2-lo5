@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UC2LO5</title>
+
+    
+    <style>
+        #main{
+            border: 2px;
+            border-style: solid;
+            margin: 20px;
+            padding: 30px;
+
+            -webkit-transition: background 0.7s;
+            -moz-transition: background 0.7s;
+            transition: backround 0.7s;
+        
+    }
+</style>
+</head>
+<body>
+<div id="main">
+<form>
+    <h1>Calculator</h1>
+   
+   <input type="text" id="result" style="height:50px; width:260px" value="">
+   <select id="selectHistoryId" name="selectHistory" >
+    <option>history</option><br>
+</select> <input type="button"id="btnRemove"  style="height:20px; width:70px" onclick="removed()" value="REMOVE"> <br>
+  <input type="button"id="btn1"  style="height:50px; width:50px" onclick="myFunction1()" value="1"> 
+  <input type="button"id="btn2"style="height:50px; width:50px" onclick="myFunction2()" value="2"> 
+  <input type="button"id="btn3"style="height:50px; width:50px" onclick="myFunction3()" value="3"> 
+  <input type="button"id="btn4"style="height:50px; width:50px" onclick="myFunction4()" value="4">
+  <input type="button"id="btnAdd"style="height:50px; width:50px" onclick="myFunctionAdd()" value="+"><br> 
+  <input type="button"id="btn5"style="height:50px; width:50px" onclick="myFunction5()" value="5"> 
+  <input type="button"id="btn6"style="height:50px; width:50px" onclick="myFunction6()" value="6"> 
+  <input type="button"id="btn7"style="height:50px; width:50px" onclick="myFunction7()" value="7"> 
+  <input type="button"id="btn8"style="height:50px; width:50px" onclick="myFunction8()" value="8">
+  <input type="button"id="btnTimes"style="height:50px; width:50px" onclick="myFunctionTimes()" value="x"><br> 
+  <input type="button"id="btn9"style="height:50px; width:50px" onclick="myFunction9()" value="9"> 
+  <input type="button"id="btn0"style="height:50px; width:50px" onclick="myFunction0()" value="0"> 
+  <input type="button"id="btnMinus"style="height:50px; width:50px" onclick="myFunctionMinus()" value="-"> 
+  <input type="button"id="btnDivide"style="height:50px; width:50px" onclick="myFunctionDivide()" value="/">
+  <input type="button"id="btnEquals"style="height:50px; width:50px" onclick="myFunctionEquals()" value="="><br>
+  <input type="button"id="btnPoint"style="height:50px; width:50px" onclick="myFunctionPoint()" value=".">
+  <input type="button"id="btnClear"style="height:50px; width:213px" onclick="myFunctionClear()" value="CLEAR">
+  
+  
+  
+</form>
+
+</div>
+<script src="model.js"></script>
+<script src="bckGround.js"></script>
+<script src="addHistory.js"></script>
+<script src="removed.js"></script>
+
+
+</body>
+</html>
